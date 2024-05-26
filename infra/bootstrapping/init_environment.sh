@@ -53,10 +53,12 @@ export PREFIX=aml
 export SUFFIX=sdkv202
 export APP_NAME="github-sp-amlsdkv2-gh-2"
 export timestamp=$(date +%s)
-# export RESOURCE_GROUP_NAME=test-data-rg
-# export WORKSPACE_NAME=${PREFIX}${SUFFIX}${DATE_ONLY}-ws
-# export SUBSCRIPTION_ID=test
-# export AZURE_SERVICE_PRINCIPAL="github-sp-${PREFIX}${SUFFIX}"
+
+# Override the defaults
+export RESOURCE_GROUP_NAME=development-rg
+export WORKSPACE_NAME=customer-churn-ws
+export SUBSCRIPTION_ID=f2a11732-7174-4d8d-8aac-30b143729dad
+export AZURE_SERVICE_PRINCIPAL=github-aml-sp
 
 # check if the required variables are specified.
 
